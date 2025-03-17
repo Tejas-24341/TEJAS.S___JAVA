@@ -1,0 +1,47 @@
+package BM23AI198_TEJAS;
+
+public class wrap {
+    public static void main(String[] args){
+
+        Integer boxedInt = Integer.valueOf(10);
+        Double boxedDouble = Double.valueOf(20.5);
+        Character boxedChar = Character.valueOf('A');
+        Boolean boxedBoolean = Boolean.valueOf(true);
+        Float boxedFloat = Float.valueOf(30.5f);
+
+
+        int unboxedInt = boxedInt.intValue();
+        double unboxedDouble = boxedDouble.doubleValue();
+        char unboxedChar = boxedChar.charValue();
+        boolean unboxedBoolean = boxedBoolean.booleanValue();
+        float unboxedFloat = boxedFloat.floatValue();
+
+
+        System.out.println("Boxed Integer: " + boxedInt);
+        System.out.println("Boxed Double: " + boxedDouble);
+        System.out.println("Boxed Character: " + boxedChar);
+        System.out.println("Boxed Boolean: " + boxedBoolean);
+        System.out.println("Boxed Float: " + boxedFloat);
+
+
+        System.out.println("Unboxed Integer: " + unboxedInt);
+        System.out.println("Unboxed Double: " + unboxedDouble);
+        System.out.println("Unboxed Character: " + unboxedChar);
+        System.out.println("Unboxed Boolean: " + unboxedBoolean);
+        System.out.println("Unboxed Float: " + unboxedFloat);
+    }
+}
+OUTPUT:
+"C:\Program Files\Java\jdk-18.0.1.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.4\lib\idea_rt.jar=50173" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Admin\IdeaProjects\Tejas\out\production\Tejas BM23AI198_TEJAS.wrap
+Boxed Integer: 10
+Boxed Double: 20.5
+Boxed Character: A
+Boxed Boolean: true
+Boxed Float: 30.5
+Unboxed Integer: 10
+Unboxed Double: 20.5
+Unboxed Character: A
+Unboxed Boolean: true
+Unboxed Float: 30.5
+
+Process finished with exit code 0
