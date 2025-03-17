@@ -1,0 +1,53 @@
+package BM23AI198_TEJAS;
+
+import java.util.Scanner;
+public class Membership_1a {
+    String name;
+    int age;
+    double fee;
+    int duration;
+    boolean isActive;
+
+    public void calculateFee() {
+        fee = duration * 50.0;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Membership_1a obj = new Membership_1a();
+        System.out.println("Welcome to the Membership");
+        System.out.println("Enter your name:");
+        obj.name = scanner.nextLine();
+        System.out.println("Enter the age:");
+        obj.age = scanner.nextInt();
+        System.out.println("Active member? (true/false):");
+        obj.isActive = scanner.nextBoolean();
+        System.out.println("Enter the duration in months:");
+        obj.duration = scanner.nextInt();
+        obj.calculateFee();
+        System.out.println("Details:");
+        System.out.println("Name: " + obj.name);
+        System.out.println("Age: " + obj.age);
+        System.out.println("Duration: " + obj.duration + " months");
+        System.out.println("Fee: " + obj.fee);
+    }
+}
+
+OUTPUT:
+"C:\Program Files\Java\jdk-18.0.1.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.4\lib\idea_rt.jar=49458" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Admin\IdeaProjects\Tejas\out\production\Tejas BM23AI198_TEJAS.Membership_1a
+Welcome to the Membership
+Enter your name:
+TEJAS.S
+Enter the age:
+19
+Active member? (true/false):
+true
+Enter the duration in months:
+12
+Details:
+Name: TEJAS.S
+Age: 19
+Duration: 12 months
+Fee: 600.0
+
+Process finished with exit code 0
