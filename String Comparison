@@ -1,0 +1,77 @@
+package BM23AI198_TEJAS;
+import java.util.Scanner;
+public class string__c {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter first string: ");
+        String str1 = scanner.nextLine();
+        System.out.print("Enter second string: ");
+        String str2 = scanner.nextLine();
+
+
+        if (str1.equals(str2)) {
+            System.out.println("The strings are equal.");
+        } else {
+            System.out.println("The strings are not equal.");
+        }
+
+        String concatenatedString = str1 + " " + str2;
+        System.out.println("Concatenated String: " + concatenatedString);
+
+        String copiedString = new String(str1);
+        System.out.println("Copied String: " + copiedString);
+
+        scanner.close();
+    }
+}
+
+OUTPUT:
+"C:\Program Files\Java\jdk-18.0.1.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.4\lib\idea_rt.jar=53395" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Admin\IdeaProjects\Tejas\out\production\Tejas BM23AI198_TEJAS.string__c
+Enter first string: TEJAS
+Enter second string: TEJAS
+The strings are equal.
+Concatenated String: TEJAS TEJAS
+Copied String: TEJAS
+
+Process finished with exit code 0
+
+ 3B.
+package BM23AI198_TEJAS;
+import java.util.Scanner;
+public class s {
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            StringBuffer buffer = new StringBuffer();
+            System.out.println("Initial capacity of StringBuffer: " + buffer.capacity());
+
+            System.out.print("Enter a string to reverse and convert to uppercase: ");
+            String inputString = scanner.nextLine();
+            StringBuffer reversedBuffer = new StringBuffer(inputString);
+            reversedBuffer.reverse();
+            String reversedUpper = reversedBuffer.toString().toUpperCase();
+            System.out.println("Reversed and Uppercase String: " + reversedUpper);
+
+            System.out.print("Enter another string to append: ");
+            String appendString = scanner.nextLine();
+            reversedUpper += appendString;
+            System.out.println("Final Resultant String: " + reversedUpper);
+
+            scanner.close();
+        }
+    }
+
+OUTPUT:
+"C:\Program Files\Java\jdk-18.0.1.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.4\lib\idea_rt.jar=53407" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\Admin\IdeaProjects\Tejas\out\production\Tejas BM23AI198_TEJAS.s
+Initial capacity of StringBuffer: 16
+Enter a string to reverse and convert to uppercase: SAJET
+Reversed and Uppercase String: TEJAS
+Enter another string to append: S
+Final Resultant String: TEJASS
+
+Process finished with exit code 0
+
+
+
+
