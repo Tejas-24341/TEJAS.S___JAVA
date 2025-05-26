@@ -1,0 +1,44 @@
+public class Enumeration {
+    public enum DayOfWeek{
+        SUNDAY,
+        MONDAY,
+        TUESDAY,
+        WEDNESDAY,
+        THURSDAY,
+        FRIDAY,
+        SATURDAY;
+        public boolean IsWorkDayOf(){
+            return(this!=SATURDAY && this!=SUNDAY);
+        }
+    }
+    public static void main(String[] args) {
+        System.out.println("Is Monaday a work day?" +DayOfWeek.MONDAY.IsWorkDayOf());
+        System.out.println("Is Saturday a work day?"+DayOfWeek.SATURDAY.IsWorkDayOf());
+    }
+}
+
+
+import java.util.Scanner;
+public class ExamScoreTracker {
+    public static void main(String[] args) {
+        int num_student=5;
+        int[] examscore=new int[num_student];
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter exam scores:");
+        for(int i=0; i<num_student;i++){
+            System.out.println("Enter the score : " +(i+1)+":");
+            examscore[i]=scanner.nextInt();
+        }
+        int sum=0;
+        int highest=examscore[0];
+        for(int score: examscore){
+            sum+= score;
+            if(score>highest){
+                highest=score;
+            }
+        }
+        System.out.println("\nExamscorestatistics:");
+        System.out.println("Sumofallscores:"+sum);
+        System.out.println("Highestscoreattained:"+highest);
+    }
+}
